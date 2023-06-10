@@ -1,1 +1,113 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+}
 
+.app {
+    margin: 1rem;
+}
+
+.app > *:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+.home {
+    padding: 1rem;
+}
+
+.home, .post-form {
+    border: 1px solid black;
+    border-radius: .5rem;
+}
+
+.btn-action {
+    display: block;
+    width: fit-content;
+    border: 1px solid cornflowerblue;
+    border-radius: .5rem;
+    padding: .5rem 1rem;
+    background-color: inherit;
+    color: cornflowerblue;
+}
+
+.btn-action:hover {
+    cursor: pointer;
+    background-color: cornflowerblue;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: initial;
+}
+
+.post-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.post-form > * {
+    display: flex;
+    justify-content: end;
+    padding: 1rem;
+}
+
+.post-form .body {
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+}
+
+.post-form .body #comment {
+    width: 100%;
+}
+
+.post {
+    padding: 1rem;
+    border: 1px solid black;
+    border-radius: .5rem;
+}
+
+.post .header {
+    display: flex;
+    align-items: center;
+}
+
+.post > *:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+.post .header img {
+    border-radius: 50%;
+    margin-right: .5rem;
+}
+
+.post .header div {
+    display: flex;
+    flex-direction: column;
+}
+
+.post .footer {
+    display: flex;
+    justify-content: end;
+}
+
+.post .footer > *:not(:last-child) {
+    margin-right: .5rem;
+}
+
+.btn-remove {
+    display: block;
+    width: fit-content;
+    border: 1px solid darkred;
+    border-radius: .5rem;
+    padding: .5rem 1rem;
+    background-color: inherit;
+    color: darkred;
+}
+
+.btn-remove:hover {
+    cursor: pointer;
+    background-color: darkred;
+    color: white;
+}
